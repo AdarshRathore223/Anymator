@@ -1,13 +1,18 @@
 import './App.css';
+import Blink from './assets/components/Blink';
+
 // import Tim from './assets/components/Tim';
-import Typewriter from './assets/components/Typewriter';
+// import Typewriter from './assets/components/Typewriter';
 
 function App() {
   return (
     <>
+    <div>
       {/* <Tim /> */}
-      <Typewriter />
-      
+      {/* <Typewriter /> */}
+      <Blink />
+
+    </div>
     </>
   )
 }

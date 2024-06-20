@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 
 function Typewriter() {
