@@ -26,13 +26,20 @@ export default {
           '100%': {opacity: 1}
         },
 
+        wiggle: {
+          '0%, 100%': {transform: 'rotate(-3deg)'},
+          '50%': {transform: 'rotate(3deg)'}
+        }
+
       },
 
       animation: {
         blink: 'blink 1s infinite',
         rotate: 'rotate 1s linear infinite',
         fadeIn: 'fadeIn 2s ease-in-out',
-        pulse: 'pulse 2s infinite',
+        // pulse: 'pulse 2s infinite',
+        wiggle: 'wiggle 0.5s ease-in-out infinite',
+        
       },
 
     },

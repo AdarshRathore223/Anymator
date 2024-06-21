@@ -5,7 +5,9 @@ import './App.css';
 // import Rotate from './assets/components/Rotate';
 // import Bounce from './assets/components/Bounce';
 // import FadeIn from './assets/components/FadeIn';
-import Pulse from './assets/components/Pulse';
+// import Pulse from './assets/components/Pulse';
+import Wiggle from './assets/components/Wiggle';
+
 function App() {
   return (
     <>
@@ -16,7 +18,8 @@ function App() {
       {/* <Bounce /> */}
       {/* <Rotate /> */}
       {/* <FadeIn /> */}
-        <Pulse />
+      {/* <Pulse /> */}
+      <Wiggle />
     </div>
     </>
   )
