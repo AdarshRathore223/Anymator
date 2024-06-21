@@ -1,10 +1,11 @@
 import './App.css';
-import FadeIn from './assets/components/FadeIn';
-// import Bounce from './assets/components/Bounce';
 // import Blink from './assets/components/Blink';
 // import Tim from './assets/components/Tim';
 // import Typewriter from './assets/components/Typewriter';
 // import Rotate from './assets/components/Rotate';
+// import Bounce from './assets/components/Bounce';
+// import FadeIn from './assets/components/FadeIn';
+import Pulse from './assets/components/Pulse';
 function App() {
   return (
     <>
@@ -14,8 +15,8 @@ function App() {
       {/* <Blink /> */}
       {/* <Bounce /> */}
       {/* <Rotate /> */}
-      <FadeIn />
-
+      {/* <FadeIn /> */}
+        <Pulse />
     </div>
     </>
   )

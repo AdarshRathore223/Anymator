@@ -25,12 +25,14 @@ export default {
           '75%': {opacity: 0},
           '100%': {opacity: 1}
         },
+
       },
-      
+
       animation: {
         blink: 'blink 1s infinite',
         rotate: 'rotate 1s linear infinite',
         fadeIn: 'fadeIn 2s ease-in-out',
+        pulse: 'pulse 2s infinite',
       },
 
     },
