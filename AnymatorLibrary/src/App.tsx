@@ -1,11 +1,11 @@
 import './App.css';
-import Bounce from './assets/components/Bounce';
+// import Bounce from './assets/components/Bounce';
 
 // import Blink from './assets/components/Blink';
 
 // import Tim from './assets/components/Tim';
 // import Typewriter from './assets/components/Typewriter';
-// import Rotate from './assets/components/Rotate';
+import Rotate from './assets/components/Rotate';
 function App() {
   return (
     <>
@@ -13,8 +13,8 @@ function App() {
       {/* <Tim /> */}
       {/* <Typewriter /> */}
       {/* <Blink /> */}
-      {/* <Rotate /> */}
-      <Bounce />
+      <Rotate />
+      {/* <Bounce /> */}
 
     </div>
     </>
