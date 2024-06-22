@@ -29,6 +29,11 @@ export default {
         wiggle: {
           '0%, 100%': {transform: 'rotate(-3deg)'},
           '50%': {transform: 'rotate(3deg)'}
+        },
+
+        flash: {
+          '0%, 50%, 100%': {opacity: 1},
+          '25%, 75%': {opacity: 0}
         }
 
       },
@@ -39,7 +44,8 @@ export default {
         fadeIn: 'fadeIn 2s ease-in-out',
         // pulse: 'pulse 2s infinite',
         wiggle: 'wiggle 0.5s ease-in-out infinite',
-        
+        flash: 'flash 1s infinite',
+
       },
 
     },
