@@ -41,7 +41,12 @@ export default {
           '25%': { borderRadius: '50% 50% 50% 50% / 50% 50% 50% 50%' },
           '50%': { borderRadius: '60% 40% 60% 40% / 50% 50% 50% 50%' },
           '75%': { borderRadius: '40% 60% 40% 60% / 50% 50% 50% 50%' },
-        }
+        },
+
+        wave: {
+          '0%, 100%': {transform: 'rotate(0deg)'},
+          '50%': {transform: 'rotate(15deg)'}
+        },
 
       },
 
@@ -49,10 +54,10 @@ export default {
         blink: 'blink 1s infinite',
         rotate: 'rotate 1s linear infinite',
         fadeIn: 'fadeIn 2s ease-in-out',
-        // pulse: 'pulse 2s infinite',
         wiggle: 'wiggle 0.5s ease-in-out infinite',
         flash: 'flash 1s infinite',
-        blob: 'blob 5s infinite'
+        blob: 'blob 5s infinite',
+        wave: 'wave 1s infinite',
 
       },
 
