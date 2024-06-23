@@ -1,4 +1,5 @@
 import './App.css';
+import FloatingClouds from './assets/components/FloatingClouds';
 
 // import Blink from './assets/components/Blink';
 // import Tim from './assets/components/Tim';
@@ -10,7 +11,7 @@ import './App.css';
 // import Wiggle from './assets/components/Wiggle';
 // import Flash from './assets/components/Flash';
 // import Blob from './assets/components/Blob';
-import WavingHand from './assets/components/WavingHand';
+// import WavingHand from './assets/components/WavingHand';
 
 function App() {
   return (
@@ -26,7 +27,8 @@ function App() {
       {/* <Wiggle /> */}
       {/* <Flash /> */}
       {/* <Blob /> */}
-      <WavingHand />
+      {/* <WavingHand /> */}
+      <FloatingClouds />
     </div>
     </>
   )

@@ -48,6 +48,11 @@ export default {
           '50%': {transform: 'rotate(15deg)'}
         },
 
+        floatclouds: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(100px)' },
+        }
+
       },
 
       animation: {
@@ -58,6 +63,7 @@ export default {
         flash: 'flash 1s infinite',
         blob: 'blob 5s infinite',
         wave: 'wave 1s infinite',
+        floatclouds: 'floatclouds 5s infinite linear',
 
       },
 
