@@ -1,4 +1,6 @@
 import './App.css';
+import Blob from './assets/components/Blob';
+
 // import Blink from './assets/components/Blink';
 // import Tim from './assets/components/Tim';
 // import Typewriter from './assets/components/Typewriter';
@@ -7,7 +9,7 @@ import './App.css';
 // import FadeIn from './assets/components/FadeIn';
 // import Pulse from './assets/components/Pulse';
 // import Wiggle from './assets/components/Wiggle';
-import Flash from './assets/components/Flash';
+// import Flash from './assets/components/Flash';
 
 function App() {
   return (
@@ -21,7 +23,8 @@ function App() {
       {/* <FadeIn /> */}
       {/* <Pulse /> */}
       {/* <Wiggle /> */}
-      <Flash />
+      {/* <Flash /> */}
+      <Blob />
     </div>
     </>
   )

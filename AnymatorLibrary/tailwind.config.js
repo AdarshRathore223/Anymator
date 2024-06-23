@@ -34,6 +34,13 @@ export default {
         flash: {
           '0%, 50%, 100%': {opacity: 1},
           '25%, 75%': {opacity: 0}
+        },
+
+        blob: {
+          '0%, 100%': { borderRadius: '60% 40% 60% 40% / 40% 60% 40% 60%' },
+          '25%': { borderRadius: '50% 50% 50% 50% / 50% 50% 50% 50%' },
+          '50%': { borderRadius: '60% 40% 60% 40% / 50% 50% 50% 50%' },
+          '75%': { borderRadius: '40% 60% 40% 60% / 50% 50% 50% 50%' },
         }
 
       },
@@ -45,6 +52,7 @@ export default {
         // pulse: 'pulse 2s infinite',
         wiggle: 'wiggle 0.5s ease-in-out infinite',
         flash: 'flash 1s infinite',
+        blob: 'blob 5s infinite'
 
       },
 
