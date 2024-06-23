@@ -9,4 +9,4 @@ const Button = ({ children }: Propstypes) => {
   return <button>{children}</button>;
 };
 
-export default Button;
+export default { Button };
