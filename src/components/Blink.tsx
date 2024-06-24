@@ -1,18 +1,31 @@
 import * as React from "react";
-import { useState, useEffect } from "react";
 
-interface BlinkProps {
-  text: string;
+
+const blinkKeyframes = `
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
+`;
 
-const Blink = ({ text }: BlinkProps) => {
-  return (
-    <p
-      className={`animate-blink absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-medium text-5xl text-indigo-500 `}
-    >
-      {text}
-    </p>
-  );
+const myStyle: React.CSSProperties = {
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  fontWeight: "500",
+  fontSize: "3rem", // Equivalent to text-5xl
+  color: "#6366F1", // Equivalent to text-indigo-500
+  animation: "blink 1s infinite",
 };
 
-export { Blink };
+function Blink() {
+  return (
+    <>
+      <style>{blinkKeyframes}</style>
+      <div style={myStyle}>Blinking Text</div>
+    </>
+  );
+}
+
+export { Blink } ;
