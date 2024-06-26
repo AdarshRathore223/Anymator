@@ -1,19 +1,26 @@
 import * as React from "react";
 
-const LoadingSpinner: React.FC = () => {
-  const spinnerAnimation = `
-                @keyframes rotate {
-                    0% { transform: rotate(0deg); }
-                    100% { transform: rotate(360deg); }
-                }
-            `;
+const spinnerAnimation = `
+  @keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+`;
 
+interface LoadingSpinnerProps {
+  size: string;
+  bordersize: string;
+  color: string;
+}
+
+function LoadingSpinner({ size, bordersize, color }: LoadingSpinnerProps) {
   const circleStyle: React.CSSProperties = {
-    width: "5rem",
+    width: size,
     aspectRatio: "1",
-    border: "1rem solid transparent",
+    borderWidth: bordersize,
+    border: "solid transparent",
     borderRadius: "50%",
-    borderBottomColor: "#f43f5e",
+    borderBottomColor: color,
     animation: "rotate 1s linear infinite",
   };
 
@@ -23,6 +30,6 @@ const LoadingSpinner: React.FC = () => {
       <div style={circleStyle}></div>
     </div>
   );
-};
+}
 
-export default LoadingSpinner;
+export { LoadingSpinner };
